@@ -9,7 +9,7 @@ export async function getStories() {
         var fetchedStoriesIds = await service.get(`/newstories.json`).then(({ data }) => data);
         //console.log(fetchedStoriesIds);
         //slice
-        return fetchedStoriesIds.slice(1,10);
+        return fetchedStoriesIds.slice(1,50);
     }
     catch (error) {
         console.error(error);

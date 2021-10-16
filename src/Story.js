@@ -20,7 +20,7 @@ function Story({storyId}) {
             </Card.Body>
         </Card> 
         </>
-    return story ? <>
+    return story && story.url ? <>
                     <Card>
                         <Card.Header>
                             <Card.Title>
